@@ -129,7 +129,7 @@
      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 /*---------------------- 3. Header ------------------------*/
-/* Top bar */
+/* Top bar
  .top-bar {
      height: 120px;
 }
@@ -217,8 +217,8 @@
      .top-bar .cart-text {
          font-size: 13px;
     }
-}
-/* Main menu */
+} */
+/* Main menu
  .main-menu {
      height: 50px;
 }
@@ -291,7 +291,7 @@
 }
  .navbar-inverse .navbar-toggle {
      background-color: #333;
-}
+} */
 /* List brand */
  .list-brand {
      height: 170px;
@@ -316,7 +316,7 @@
     opacity: 1;
 }
 /* Footer */
- .footer a {
+ /* .footer a {
      display: block;
      font-size: 18px;
 }
@@ -326,4 +326,4 @@
 }
  .footer .hd {
      font-weight: 700;
-}
+} */
