@@ -31,24 +31,24 @@ function footer() {
               <a className="hd" href>Phương thức thanh toán</a>
               <div className="row" style={{marginTop: '5%'}}>
                 <div className="col-md-4 col-xs-4">
-                  <img src="images/pay-paypal.png" alt="" style={{border: '1px solid black'}} />
+                  <img src={process.env.PUBLIC_URL + "images/pay-paypal.png"} alt="" style={{border: '1px solid black'}} />
                 </div>
                 <div className="col-md-4 col-xs-4">
-                  <img src="images/pay-visa.png" alt="" style={{border: '1px solid black'}} />
+                  <img src={process.env.PUBLIC_URL + "images/pay-visa.png"} alt="" style={{border: '1px solid black'}} />
                 </div>
                 <div className="col-md-4 col-xs-4">
-                  <img src="images/pay-mastercard.png" alt="" style={{border: '1px solid black'}} />
+                  <img src={process.env.PUBLIC_URL + "images/pay-mastercard.png"} alt="" style={{border: '1px solid black'}} />
                 </div>
               </div>
               <div className="row" style={{marginTop: '5%'}}>
                 <div className="col-md-4 col-xs-4">
-                  <img src="images/pay-money-home.svg" alt="" style={{border: '1px solid black'}} />
+                  <img src={process.env.PUBLIC_URL + "images/pay-money-home.svg"} alt="" style={{border: '1px solid black'}} />
                 </div>
                 <div className="col-md-4 col-xs-4">
-                  <img src="images/pay-internet-banking.svg" alt="" style={{border: '1px solid black'}} />
+                  <img src={process.env.PUBLIC_URL + "images/pay-internet-banking.svg"} alt="" style={{border: '1px solid black'}} />
                 </div>
                 <div className="col-md-4 col-xs-4">
-                  <img src="images/pay-installment.svg" alt="" style={{border: '1px solid black'}} />
+                  <img src={process.env.PUBLIC_URL + "images/pay-installment.svg"} alt="" style={{border: '1px solid black'}} />
                 </div>
               </div>
             </div>

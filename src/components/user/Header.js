@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 import "../../css/Header.css";
 function Header() {
   
@@ -8,11 +9,21 @@ function Header() {
             <div className="container">
                 <div className="row" >
                     <div className="logo col-sm-6 clearfix">
-                        <a href="#" className="logo" style={{float: "left"}}><img src="images/logo.png" alt="logo" /></a>
+                            <NavLink activeClassName="active-link" className="nav-Navlink p-0" to="/">
+                                <img src={process.env.PUBLIC_URL + "images/logo/logo-website.png"} alt="logo" />
+                            </NavLink>
+                        {/* <a href="#" className="logo" style={{float: "left"}}></a> */}
                     </div>
                     <div className="col-sm-6 clearfix">
                         <div className="row" style={{marginTop: '2%', marginBottom: '2%'}}>
-                            <span className="float-right" id="btn-login">Login / Register</span>
+                            <span className="float-right">
+                                <NavLink activeClassName="active-link" className="nav-Navlink p-0" to="/user/login">
+                                    Login
+                                </NavLink> / 
+                                <NavLink activeClassName="active-link" className="nav-Navlink p-0" to="/user/register">
+                                    Register
+                                </NavLink>
+                            </span>
                         </div>
                         <div className="row">
                             <div className="col-md-8 col-xs-8" style={{paddingRight: 0, paddingLeft: 0}}>
@@ -24,7 +35,7 @@ function Header() {
                                 <div className="col-md-4 col-xs-4" style={{paddingRight: 0, paddingLeft: 0}}>
                                 <div className="cart clearfix">
                                     <span className="cart-text">0 ITEMS</span>
-                                    <span className="float-right"><a href="#" className="fa fa-shopping-cart" /></span>
+                                    <span className="float-right"><Link to="/cart" className="fa fa-shopping-cart" /></span>
                                 </div>
                             </div>
                         </div>
@@ -41,54 +52,67 @@ function Header() {
                             <span className="icon-bar" />
                             <span className="icon-bar" />                        
                         </button>
-                        <a href="#" className="navbar-brand"><img src="images/logo.png" alt="logo" /></a>
+                        <a href="#" className="navbar-brand"><img src={process.env.PUBLIC_URL + "images/logo/logo-website.png"} alt="logo" /></a>
                     </div>
                     <div className="navbar-collapse collapse" id="myNavbar">
                         <ul className="nav navbar-nav">
-                            <li className="dropdown" id="f">
-                                <a className="dropdown-toggle" data-toggle="dropdown" href="#">GAMING 
+                            <li className="dropdown" >
+                                <a className="dropdown-toggle" data-toggle="dropdown" href="#">LAPTOP
                                     <i className="fa fa-angle-double-down" />
                                     <i className="fa fa-angle-double-up" />
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a href="#" className="adidas">Adidas</a></li>
-                                    <li><a href="#" className="van">Van</a></li>
-                                    <li><a href="#" className="converse">Converse</a></li>
-                                    <li><a href="#" className="nike">Nike</a></li>
-                                    <li><a href="#" className="palladium">Palladium</a></li>
-                                    <li><a href="#" className="jordan">Jordan</a></li>
+                                    <li><Link to="#" className="samsung">Samsung</Link></li>
+                                    <li><Link to="#" className="acer">Acer</Link></li>
+                                    <li><Link to="#" className="dell">Dell</Link></li>
+                                    <li><Link to="#" className="intel">Intel</Link></li>
+                                    <li><Link to="#" className="lenovo">Lenovo</Link></li>
+                                    <li><Link to="#" className="toshiba">Toshiba</Link></li>
                                 </ul>
                             </li>
                             <li className="dropdown">
-                                <a className="dropdown-toggle" data-toggle="dropdown" href="#">PHỤ KIỆN LAPTOP
+                                <a className="dropdown-toggle" data-toggle="dropdown" href="#">ĐIỆN THOẠI
                                     <i className="fa fa-angle-double-down" />
                                     <i className="fa fa-angle-double-up" />
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a href="#" className="adidas">Adidas</a></li>
-                                    <li><a href="#" className="van">Van</a></li>
-                                    <li><a href="#" className="converse">Converse</a></li>
-                                    <li><a href="#" className="nike">Nike</a></li>
-                                    <li><a href="#" className="palladium">Palladium</a></li>
-                                    <li><a href="#" className="jordan">Jordan</a></li>
+                                    <li><Link to="#" className="samsung">Samsung</Link></li>
+                                    <li><Link to="#" className="acer">Acer</Link></li>
+                                    <li><Link to="#" className="dell">Dell</Link></li>
+                                    <li><Link to="#" className="intel">Intel</Link></li>
+                                    <li><Link to="#" className="lenovo">Lenovo</Link></li>
+                                    <li><Link to="#" className="toshiba">Toshiba</Link></li>
                                 </ul>
                             </li>
                             <li className="dropdown">
-                                <a className="dropdown-toggle" data-toggle="dropdown" href="#">PHẦN CỨNG 
+                                <a className="dropdown-toggle" data-toggle="dropdown" href="#">PHỤ KIỆN 
                                     <i className="fa fa-angle-double-down" />
                                     <i className="fa fa-angle-double-up" />
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a href="#" className="adidas">Adidas</a></li>
-                                    <li><a href="#" className="van">Van</a></li>
-                                    <li><a href="#" className="converse">Converse</a></li>
-                                    <li><a href="#" className="nike">Nike</a></li>
-                                    <li><a href="#" className="palladium">Palladium</a></li>
-                                    <li><a href="#" className="jordan">Jordan</a></li>
+                                    <li><Link to="#" className="samsung">Samsung</Link></li>
+                                    <li><Link to="#" className="acer">Acer</Link></li>
+                                    <li><Link to="#" className="dell">Dell</Link></li>
+                                    <li><Link to="#" className="intel">Intel</Link></li>
+                                    <li><Link to="#" className="lenovo">Lenovo</Link></li>
+                                    <li><Link to="#" className="toshiba">Toshiba</Link></li>
                                 </ul>
                             </li>
-                            <li><a href="#" className="new-arrival">NEW ARRIVAL</a></li>
-                            <li><a href="#" className="sale">SALE</a></li>
+                            <li className="dropdown">
+                                <a className="dropdown-toggle" data-toggle="dropdown" href="#">THIẾT BỊ SỐ 
+                                    <i className="fa fa-angle-double-down" />
+                                    <i className="fa fa-angle-double-up" />
+                                </a>
+                                <ul className="dropdown-menu">
+                                    <li><Link to="#" className="samsung">Samsung</Link></li>
+                                    <li><Link to="#" className="acer">Acer</Link></li>
+                                    <li><Link to="#" className="dell">Dell</Link></li>
+                                    <li><Link to="#" className="intel">Intel</Link></li>
+                                    <li><Link to="#" className="lenovo">Lenovo</Link></li>
+                                    <li><Link to="#" className="toshiba">Toshiba</Link></li>
+                                </ul>
+                            </li>
+                            <li><Link to="#" className="sale">FLASH SALE</Link></li>
                         </ul>
                     </div>
                 </nav>

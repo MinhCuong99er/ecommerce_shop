@@ -1,17 +1,21 @@
 /* footer */
 .footer a {
     display: block;
-    font-size: 18px;
+    font-size: 15px;
 }
 .footer {
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 5%;
+    border-top: 2px solid black;
+    padding-bottom: 30px;
 }
 .footer .hd {
     font-weight: 700;
     text-transform: uppercase;
 }
-
+.footer .container .row{
+    margin-top: 30px;
+}
 .align-items-end {
     -ms-flex-align: end !important;
     align-items: flex-end !important
